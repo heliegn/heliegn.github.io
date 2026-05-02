@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #8c8c8c;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px; /* mas dako para mosulod ug mubaba */
+    }
+
+    .logo {
+    font-weight: 300;
+    font-size: 16px;
+    color: #9a9a9a;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+    .logo:hover {
+    color: #555;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: #8c8c8c;
+      margin-left: 30px;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #555;
+    }
+
+    /* Center Content */
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      padding-top: 70px;
+    }
+
+    .hero h1 {
+      font-size: 34px;
+      font-weight: 600;
+      color:#28282B;
+      line-height: 1.4;
+      max-width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      .navbar {
+        padding: 20px;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+
+    /* ABOUT CONTENT */
+  .about {
+  margin-top: 120px;
+}
+
+/* KEY FIX: container with side spacing */
+.about-container {
+  max-width: 1100px;   /* para dili mo dikit sa kilid */
+  margin: 0 auto;      /* center */
+  padding: 0 40px;     /* breathing space */
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* each column */
+.about-item {
+  flex: 1;
+}
+
+.about-item h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.about-item p {
+  font-size: 15px;
+  color: #666;
+  font-style:italic;
+  line-height: 1.7;
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html" class="logo">Heliegn J</a>
+
+    <div class="nav-links">
+      <a href="#">Projects</a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
+
+  <section class="about">
+  <div class="about-container">
+
+    <div class="about-item">
+      <h2>UI/UX Designing</h2>
+      <p>
+        I’m passionate about creating intuitive and user-friendly digital experiences.
+        I focus on designing clean interfaces that balance usability and visual appeal
+        while continuously improving my skills in layout, typography, and interaction design.
+      </p>
+    </div>
+
+    <div class="about-item">
+      <h2>Prototyping</h2>
+      <p>
+        I enjoy turning ideas into interactive prototypes to visualize how users will
+        experience a product. I use tools like Figma to create wireframes and test
+        design concepts, helping refine features before development.
+      </p>
+    </div>
+
+    <div class="about-item">
+      <h2>User Research</h2>
+      <p>
+        I believe understanding users is the foundation of good design. I’m learning
+        to gather insights through feedback, observation, and testing to better
+        understand user needs and improve overall experience.
+      </p>
+    </div>
+
+  </div>
+</section>s
+</body>
+</html>

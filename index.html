@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f2f2f2;
+      color: #8c8c8c;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .home {
+    text-align: center;
+    padding-top: 80px;
+    }
+
+    .home-text h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #2d2d2d;
+    line-height: 1.4;
+    margin-bottom: 90px;
+    }
+
+    .projects-preview {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* space between laptops */
+    }
+
+    .projects-preview img {
+    width: 570px;
+    transition: transform 0.3s ease;
+    }
+
+    .projects-preview img:hover {
+    transform: translateY(-10px);
+    }
+
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 120px; /* mas dako para mosulod ug mubaba */
+    }
+
+   .logo {
+    font-weight: 300;
+    font-size: 16px;
+    color: #9a9a9a;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+   .logo:hover {
+   color: #555;
+   }
+
+    .nav-links a {
+    text-decoration: none;
+    color: #8c8c8c;
+    margin-left: 30px;
+    transition: 0.5s;
+    }
+
+    .nav-links a:hover {
+    color: #555;
+    }
+
+  /* Center Content */
+    .hero {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    padding-top: 60px;
+    }
+
+    .hero h1 {
+    font-size: 34px;
+    font-weight: 600;
+    color:#28282B;
+    line-height: 1.4;
+    max-width: 700px;
+    }
+
+    @media (max-width: 768px) {
+    .navbar {
+    padding: 20px;
+    }
+
+    .hero h1 {
+    font-size: 24px;
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="navbar">
+    <a href="index.html" class="logo">Heliegn J</a>
+    
+    <div class="nav-links">
+      <a href="#">Projects</a> 
+      <a href="about.html">About</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
+
+  <section class="home">
+
+    <div class="home-text">
+        <h1>
+            Hi! I'm Heliegn Jane Peria Coso.<br>
+            My projects and academic work can be viewed here.
+        </h1>
+    </div>
+
+    <div class="projects-preview">
+        <img src="project1.png" alt="Project 1">
+        <img src="project2.png" alt="Project 2">
+    </div>
+
+</section>
+
+</body>
+</html>
