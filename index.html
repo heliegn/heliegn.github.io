@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
 
   <!-- Google Font -->
@@ -52,6 +53,15 @@
     transform: translateY(-10px);
     }
 
+    .projects {
+    display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 40px;
+     margin-top: 60px;
+    flex-wrap: wrap; /* IMPORTANT */
+    }
+
     .navbar {
     display: flex;
     justify-content: space-between;
@@ -92,6 +102,22 @@
     padding-top: 60px;
     }
 
+    .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding: 80px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+}
+
     .hero h1 {
     font-size: 34px;
     font-weight: 600;
@@ -108,6 +134,29 @@
     .hero h1 {
     font-size: 24px;
     }
+
+  
+    .hero h1 {
+  font-size: 48px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
   }
 
   </style>
@@ -119,10 +168,11 @@
     <a href="index.html" class="logo">Heliegn J</a>
     
     <div class="nav-links">
-    <a href="#">Projects</a>
-    <a href="about.html">About</a>
-    <a href="#">Resume</a>
-</div>
+      <a href="#">Projects</a> 
+      <a href="about.html">About</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
 
   <section class="home">
 
