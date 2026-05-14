@@ -198,7 +198,25 @@ img {
     margin-right:auto;
 }
 
-/* MOBILE */
+      /* DESKTOP */
+.menu-btn{
+    display:none;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+/* DESKTOP */
+.menu-btn{
+    display:none;
+}
+
+.nav-links{
+    display:flex;
+    gap:40px;
+}
+/* PHONE */
 @media (max-width:768px){
 
     .menu-btn{
@@ -208,33 +226,28 @@ img {
         z-index:1001;
     }
 
+    /* itago ang original nav sa phone */
     .nav-links{
         position:fixed;
         top:0;
-        left:-250px; /* tago sa wala */
+        left:-250px;
         width:220px;
         height:100vh;
-
         background:#fff;
-        display:flex;
+
         flex-direction:column;
         padding:100px 30px;
         gap:30px;
 
+        transition:.4s;
         box-shadow:0 0 20px rgba(0,0,0,.15);
-
-        transition:.4s ease;
-        z-index:1000;
     }
 
     .nav-links.active{
-        left:0; /* mo slide pasulod */
-    }
-
-    .nav-links a{
-        font-size:20px;
+        left:0;
     }
 }
+
 
 }
 </style>
